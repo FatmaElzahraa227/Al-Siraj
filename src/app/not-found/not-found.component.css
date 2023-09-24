@@ -1,0 +1,65 @@
+.parent {
+  width: 100%;
+  min-height: 90vh;
+  padding-top: 10%;
+}
+h1 {
+  font-size: 250px;
+  background: linear-gradient(to right, #ffc300, #fca311);
+  background: -moz-linear-gradient(to right, #ffc300, #fca311);
+  background: -webkit-linear-gradient(to right, #ffc300, #fca311);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  background: linear-gradient(to right, #ffc300, #fca311);
+  background: -moz-linear-gradient(to right, #ffc300, #fca311);
+  background: -webkit-linear-gradient(to right, #ffc300, #fca311);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2px;
+}
+.btn-dark {
+  background-color: rgba(0, 53, 102, 0.87);
+  border: none;
+  box-shadow: rgba(0, 53, 102, 0.9) 2px 2px 7px;
+  transition: 0.2s filter;
+  padding: 7px 15px 7px 15px;
+}
+.btn-dark:hover {
+  filter: brightness(110%);
+}
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 220px;
+    }
+}
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 180px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    .btn-dark{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 576px) {
+   .parent{
+    height: 92vh;
+   }
+   h1{
+    font-size: 160px;
+   }
+   h3{
+    font-size: 19px;
+   }
+}
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 140px;
+    }
+}

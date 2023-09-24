@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  margin-top: 2%;
+  background-color: rgba(0, 53, 102, 0.9);
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+.parent p {
+  font-size: 16px;
+  color: white;
+}
+a {
+  background: linear-gradient(to right, #ffc300, #fca311);
+  background: -moz-linear-gradient(to right, #ffc300, #fca311);
+  background: -webkit-linear-gradient(to right, #ffc300, #fca311);
+  font-size: 16px;
+  font-weight: 500;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a:hover {
+  filter: brightness(110%);
+}
+@media screen and (max-width: 576px) {
+  .parent p {
+    font-size: 13px;
+  }
+  .parent a {
+    font-size: 13px;
+  }
+}
+

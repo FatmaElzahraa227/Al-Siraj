@@ -1,0 +1,100 @@
+<html>
+  <body>
+    <div
+      class="parent row container-lg container-fluid m-auto justify-content-xl-evenly justify-content-md-between justify-content-center align-items-center"
+    >
+      <div class="child col-lg-5 col-md-6 col-10 d-flex flex-column justify-content-start">
+        <h1>Contact us</h1>
+        <div class="info">
+          <ul>
+            <li><h5>Head Office</h5></li>
+            <p>Ikhlaspur Road Shakargarh, Narowal.</p>
+            <li><h5>Compliant</h5></li>
+            <p>
+              <a class="anchor" href="tel:+923337044600">+923337044600</a>
+              <br />
+              <a class="anchor" href="mailto:complaint@alsirajgroup.pk"
+                >complaint@alsirajgroup.pk</a
+              >
+            </p>
+          </ul>
+        </div>
+      </div>
+      <div class="child col-lg-5 mb-4 col-md-6 col-10 child2">
+        <form class="row g-3" (submit)="sendMessage($event)">
+          <div class="col-md-6">
+            <label for="name" class="form-label required">Name</label>
+            <input
+              #nameInput
+              required
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label required">Phone Number</label>
+            <input
+              #phoneInput
+              required
+              type="phone"
+              class="form-control"
+              id="phone"
+              name="phone"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label required">Email Address</label>
+            <input #emailInput required name="email" type="email" class="form-control" id="email" />
+          </div>
+          <div class="col-md-6">
+            <label class="required">Forum</label>
+            <div class="form-check">
+              <input #newAlSiraj
+                class="form-check-input"
+                type="radio"
+                value="newAlSiraj"
+                name="forum"
+                id="newAlSiraj"
+                checked
+                (change)="onRadioChange($event)"
+              />
+              <label class="form-check-label" for="newAlSiraj">
+                New Al-Siraj
+              </label>
+            </div>
+            <div class="form-check">
+              <input #sst
+              class="form-check-input"
+              type="radio"
+              value="sst"
+              name="forum"
+              id="SST"
+              (change)="onRadioChange($event)"
+              />
+              <label class="form-check-label" for="sst">
+                S.S.T International
+              </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label required">Message</label>
+            <textarea #messageInput
+              required
+              class="form-control"
+              id="message"
+              name="message"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

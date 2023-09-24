@@ -1,0 +1,58 @@
+body {
+  min-height: 80vh;
+}
+.container {
+  padding-top: 120px;
+}
+.intro h3 {
+  background: linear-gradient(to right, #ffc300, #fca311);
+  background: -moz-linear-gradient(to right, #ffc300, #fca311);
+  background: -webkit-linear-gradient(to right, #ffc300, #fca311);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro span {
+    font-size: 18px;
+    background: rgb(0, 53, 102);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info {
+  margin-top: 50px;
+  font-size: 30px;
+  color: #003566
+}
+.info p{
+    font-size: 14px;
+    color: #5c5c5c;
+    width: 75%;
+}
+.info b{
+    color: #545454;
+}
+.info h5{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.contact h2{
+    color: red;
+    margin-top: 100px;
+}
+.contact p{
+    color: #003566;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.contact .anchor{
+    text-decoration: none;
+}
+.contact h3{
+    background: linear-gradient(to right, #ffc300, #fca311);
+    background: -moz-linear-gradient(to right, #ffc300, #fca311);
+    background: -webkit-linear-gradient(to right, #ffc300, #fca311);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
