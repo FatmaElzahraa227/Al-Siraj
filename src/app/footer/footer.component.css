@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +15,9 @@
   color: white;
 }
 a {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   font-size: 16px;
   font-weight: 500;
@@ -24,7 +26,8 @@ a {
   -webkit-text-fill-color: transparent;
 }
 a:hover {
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 @media screen and (max-width: 576px) {
   .parent p {
@@ -34,4 +37,3 @@ a:hover {
     font-size: 13px;
   }
 }
-

@@ -1,9 +1,12 @@
+
 body {
   background-color: white;
 }
 .carousel img {
   width: 100%;
   height: 100vh;
+  -o-object-fit: landscape;
+     object-fit: landscape;
 }
 .content {
   margin-top: 40px;
@@ -21,17 +24,21 @@ body {
   width: 220px;
   height: 350px;
   border: #00356622 1px solid;
-  box-shadow: #0035663f 7px 9px 10px;
+  -webkit-box-shadow: #0035663f 7px 9px 10px;
+          box-shadow: #0035663f 7px 9px 10px;
   padding: 0;
 }
 .card .btn {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   border: transparent;
 }
 .heading {
   color: #003566;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .un p {
   color: #003566;
@@ -39,14 +46,17 @@ body {
   font-size: 14px;
 }
 .over {
+  background: -webkit-gradient(linear, left top, right top, from(#054888), to(#82a8ca));
+  background: -o-linear-gradient(left, #054888, #82a8ca);
   background: linear-gradient(to right, #054888, #82a8ca);
-  background: -moz-linear-gradient(to right, #054888, #82a8ca);
   background: -webkit-linear-gradient(to right, #054888, #82a8ca);
   color: white;
   padding: 150px 20px 15px 20px;
   font-size: 13px;
   opacity: 0;
   border: none;
+  -webkit-transition: opacity 0.1s, padding 0.8s;
+  -o-transition: opacity 0.1s, padding 0.8s;
   transition: opacity 0.1s, padding 0.8s;
 }
 .over:hover {
@@ -54,16 +64,17 @@ body {
   opacity: 1;
 }
 .ceot {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 2px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 .ceott {
   margin-top: 40px;
 }
-

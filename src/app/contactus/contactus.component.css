@@ -1,3 +1,4 @@
+
 .parent {
   min-height: 90vh;
   padding-top: 150px;
@@ -7,8 +8,9 @@
   height: 55vh;
 }
 .child h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   background-clip: text;
   -webkit-background-clip: text;
@@ -21,12 +23,15 @@
 }
 .child2{
   /* width: 40%; */
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
   color: #003566;
-  box-shadow: 0px 0px 30px 5px rgba(0, 53, 102, 0.2);
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 53, 102, 0.2);
+          box-shadow: 0px 0px 30px 5px rgba(0, 53, 102, 0.2);
 }
 form{
   font-size: 14px;

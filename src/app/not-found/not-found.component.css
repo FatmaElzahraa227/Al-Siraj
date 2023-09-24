@@ -1,3 +1,4 @@
+
 .parent {
   width: 100%;
   min-height: 90vh;
@@ -5,16 +6,18 @@
 }
 h1 {
   font-size: 250px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 h3 {
+  background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+  background: -o-linear-gradient(left, #ffc300, #fca311);
   background: linear-gradient(to right, #ffc300, #fca311);
-  background: -moz-linear-gradient(to right, #ffc300, #fca311);
   background: -webkit-linear-gradient(to right, #ffc300, #fca311);
   background-clip: text;
   -webkit-background-clip: text;
@@ -24,12 +27,18 @@ h3 {
 .btn-dark {
   background-color: rgba(0, 53, 102, 0.87);
   border: none;
-  box-shadow: rgba(0, 53, 102, 0.9) 2px 2px 7px;
+  -webkit-box-shadow: rgba(0, 53, 102, 0.9) 2px 2px 7px;
+          box-shadow: rgba(0, 53, 102, 0.9) 2px 2px 7px;
+  -webkit-transition: 0.2s -webkit-filter;
+  transition: 0.2s -webkit-filter;
+  -o-transition: 0.2s filter;
   transition: 0.2s filter;
+  transition: 0.2s filter, 0.2s -webkit-filter;
   padding: 7px 15px 7px 15px;
 }
 .btn-dark:hover {
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 @media screen and (max-width: 992px) {
     h1{

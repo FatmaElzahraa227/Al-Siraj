@@ -4,17 +4,19 @@
       <div
         class="container nav d-flex justify-content-between align-items-center"
       >
+      <a routerLink="/landing-page">
         <img
           class="nav-logo"
           src="assets/images/LogoLight.svg"
           alt="Logo"
           width="100%"
         />
+      </a>
         <div class="pages">
-          <a  [ngClass]="{'d-none': isLandingPage||notfound}"  class="navbar-brand px-1 text" routerLink="/landing-page">Landing Page</a>
-          <a  [ngClass]="{'d-none': isLandingPage||notfound}"  class="navbar-brand px-3" routerLink="/landing-page"><i class="fa-solid fa-house"></i></a>
-          <a  [ngClass]="{'d-none': isContactUS||notfound}"  class="navbar-brand px-1 text" routerLink="/contact-us">Contact us</a>
-          <a  [ngClass]="{'d-none': isContactUS||notfound}"  class="navbar-brand px-3" routerLink="/contact-us"><i class="fa-solid fa-paper-plane"></i></a>
+          <a  [ngClass]="{'d-none': isLandingPage||notfound}"  class="navbar-brand" routerLink="/landing-page"><i class="fa-solid fa-house"></i></a>
+          <a  [ngClass]="{'d-none': isLandingPage||notfound}"  class="navbar-brand text" routerLink="/landing-page">Home</a>
+          <a  [ngClass]="{'d-none': isContactUS||notfound}"  class="navbar-brand" routerLink="/contact-us"><i class="fa-solid fa-paper-plane"></i></a>
+          <a  [ngClass]="{'d-none': isContactUS||notfound}"  class="navbar-brand text" routerLink="/contact-us">Contact us</a>
         </div>
       </div>
     </nav>

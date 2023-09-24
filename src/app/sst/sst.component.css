@@ -1,3 +1,4 @@
+
 body {
     min-height: 80vh;
   }
@@ -5,8 +6,9 @@ body {
     padding-top: 120px;
   }
   .intro h3 {
+    background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+    background: -o-linear-gradient(left, #ffc300, #fca311);
     background: linear-gradient(to right, #ffc300, #fca311);
-    background: -moz-linear-gradient(to right, #ffc300, #fca311);
     background: -webkit-linear-gradient(to right, #ffc300, #fca311);
     background-clip: text;
     -webkit-background-clip: text;
@@ -20,9 +22,13 @@ body {
       -webkit-text-fill-color: transparent;
   }
   .info {
+    margin: 10px;
     margin-top: 50px;
     font-size: 30px;
-    color: #003566
+    color: #003566;
+    border: #003566 3px solid;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
   }
   .info p{
       font-size: 14px;
@@ -49,8 +55,9 @@ body {
       text-decoration: none;
   }
   .contact h3{
+      background: -webkit-gradient(linear, left top, right top, from(#ffc300), to(#fca311));
+      background: -o-linear-gradient(left, #ffc300, #fca311);
       background: linear-gradient(to right, #ffc300, #fca311);
-      background: -moz-linear-gradient(to right, #ffc300, #fca311);
       background: -webkit-linear-gradient(to right, #ffc300, #fca311);
       background-clip: text;
       -webkit-background-clip: text;
